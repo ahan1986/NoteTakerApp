@@ -1,0 +1,27 @@
+{
+  "name": "NoteTakerApp",
+  "version": "1.0.0",
+  "description": "Simple web application that allows you to take notes and save it to mongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahan1986/NoteTakerApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahan1986/NoteTakerApp/issues"
+  },
+  "homepage": "https://github.com/ahan1986/NoteTakerApp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongojs": "^2.6.0",
+    "morgan": "^1.9.0"
+  }
+}
