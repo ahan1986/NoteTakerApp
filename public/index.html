@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Note Taker</title>
 </head>
+
 <body>
     <h1>Mongo Note Taking App</h1>
     <div>
         <p>Title for Note</p>
-        <input />
+        <input type="text" id="title" />
         <p>Note</p>
-        <textarea></textarea>
+        <textarea id="note"></textarea>
         <div id="button">
             <div>
-                <button>Submit</button>
+                <button id="submit">Submit</button>
             </div>
             <button>Delete All</button>
         </div>
         <p>Saved Notes</p>
-        
+
     </div>
     <div id="result"></div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
