@@ -28,4 +28,15 @@ app.get("/", (res, req)=>{
     res.send(index.html); // res.send to index.html does nothing. You can add whatever and delete it and it will not display it on to the browser.
 });
 
-//Handle form submission, save submission to mongo
+// clearall the results
+app.get("/clearall", (res, req) => {
+    db.notes.remove({}, (error, response) => {
+        if(error) {
+            console.log(error);
+            res.send(error);
+        } else {
+            console.log(response);
+            res.send(response);
+        }
+    });
+});

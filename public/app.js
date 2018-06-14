@@ -35,5 +35,12 @@ $(document).on("click", "#submit", () => {
 });
 
 $("#clear-all").on("click", () => {
-    
-})
+    $.ajax({
+        type: "GET",
+        url: "/clearall",
+        dataType: "json",
+        success: (response) => {
+            $("#results").empty();
+        }
+    });
+});
