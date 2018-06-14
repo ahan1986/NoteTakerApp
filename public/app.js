@@ -34,3 +34,6 @@ $(document).on("click", "#submit", () => {
         });
 });
 
+$("#clear-all").on("click", () => {
+    
+})
