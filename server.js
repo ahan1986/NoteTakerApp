@@ -40,3 +40,16 @@ app.get("/clearall", (res, req) => {
         }
     });
 });
+
+app.get("/delete/:id", ()=> {
+    db.notes.remove(
+        {
+            _id: mongojs.ObjectID(req.params.id)
+    }
+)
+});
+
+// Listen on port 3000
+app.listen(3000, ()=> {
+    console.log("App is running on port 3000!");
+});
