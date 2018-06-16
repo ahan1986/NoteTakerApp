@@ -45,7 +45,11 @@ app.get("/delete/:id", ()=> {
     db.notes.remove(
         {
             _id: mongojs.ObjectID(req.params.id)
-    }
+        }, function(err, doc) {
+            if(err) throw err;
+
+            else res.send(doc);
+        } 
 )
 });
 
